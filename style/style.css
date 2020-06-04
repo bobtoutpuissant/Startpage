@@ -1,3 +1,7 @@
+body {
+	background-color: rgba(240, 240, 240, 1) ;
+}
+
 img {
 	height: 90%;
 	width: 90%;
@@ -18,4 +22,9 @@ img {
 
 li,ul,ol{
 	list-style: none;
+}
+
+.linkImg {
+	border-color: rgb(36, 36, 33);
+	border-width: 2px;
 }
