@@ -1,0 +1,21 @@
+img {
+	height: 90%;
+	width: 90%;
+}
+
+#logo {
+	max-height: 20%;
+	max-width: 20%;
+}
+
+.spacer {
+	margin-top: 20px;
+}
+
+.navBlock {
+	background: red;
+}
+
+li,ul,ol{
+	list-style: none;
+}
