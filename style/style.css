@@ -8,11 +8,15 @@ img {
 }
 
 #logo {
-	height: 200%;
-	width: 200%;
+	height: auto;
+	width: 250px;
 }
 
-.spacer {
+.spacer-10 {
+	margin-top: 10px;
+}
+
+.spacer-20 {
 	margin-top: 20px;
 }
 
@@ -36,7 +40,7 @@ ul,ol{
 }
 
 .cardBlockShadow:hover {
-	box-shadow: 0 0 5px rgb(165, 11, 11);
+	box-shadow: 0 0 5px red;
 }
 
 /* nav custom colors */
