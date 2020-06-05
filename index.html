@@ -12,219 +12,312 @@
 		<link rel="stylesheet" type="text/css" href="./style/style.css">
 	</head>
 	<body>
-<!--    	<header>
-		<img  id="logo" title="TPZFlower"  alt=""  src="./TelespazioCOLORE2.jpg">
-		<a href="./question.html">
-			<img id="question" src="./question_small.jpg" alt="" />
-		</a>
-		<a href="./plus.html">
-			<img id="plusbox" src="./plus_small.jpg" alt="" title="Plus de liens" />
-		</a>
-	</header> -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<img  id="logo" title="TPZFlower"  alt=""  src="./src/Telespazio.png">
-		</nav>
+<!--Main navbar with logo-->
+	<nav class="navbar navbar-expand-lg bg-white">
+		<div class="container-fluid">
+			<div class="row">
+				<img  class="col-12" id="logo" title="TPZFlower"  alt=""  src="./src/Telespazio.jpg">
+			</div>
+		</div>
+	</nav>
+<!--tabs to navigate between main and secondary links
+To add one, copy this template and add it next to the comment quoted "NewTabPlacement" (ctrl+F to find it)
+
+<div class="col-md-3 col-sm-6">
+					<div class="cardBlockShadow border rounded bg-white">
+						<div class="text-center">
+							<a class="navBlock justify-content-center" title="" href="" target="_blank">
+								<img class="imgLink justify-content-center" src="" alt="" />
+							</a>
+						</div>
+						<div>
+							<p class="text-center"><strong>Template</strong></p>
+						</div>
+					</div>
+					<div class="spacer"></div>
+				</div>
+
+-->
+	<nav>
+		<div class="nav nav-pills nav-justified" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-main-tab" data-toggle="pill" href="#nav-main" role="tab" aria-controls="nav-main" aria-selected="true">Principaux Liens</a>
+			<a class="nav-item nav-link" id="nav-second-tab" data-toggle="pill" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false">Liens Secondaires</a>
+			<a class="nav-item nav-link" id="nav-faq-tab" data-toggle="pill" href="#nav-faq" role="tab" aria-controls="nav-faq" aria-selected="false">F.A.Q.</a>
+		</div>
+	</nav>
+	<div class="tab-content" id="nav-tabContent">
+<!--Main tab-->
+		<div class="tab-pane fade show active" id="nav-main" role="tabpanel" aria-labelledby="nav-main-tab">
 			<div class="spacer"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-3">
-						<ul>
-							<li>
-								<a class="navBlock" title="" href="https://mail.telespazio.com/owa" target="_blank">
-								<img src="./src/webmail.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Webmail</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://teamsites.telespazio.com" target="_blank">
-								<img src="./src/sharepoint.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Sharepoint</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://dropzone.ssl.telespazio.com" target="_blank">
-								<img  title="" src="./src/dropzone.png" alt="DropZone" longdesc="./dropzone.txt" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">DropZone</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://tpm.ssl.telespazio.com" target="_blank">
-								<img  title="" src="./src/tpm.png" alt="" />
-							</a>
-						</li>
-						<li><p class="text-justify">Password Manager</p></li>
-					</ul>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://mail.telespazio.com/owa" target="_blank">
+									<img class="imgLink justify-content-center" src="./src/webmail.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Webmail</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://teamsites.telespazio.com" target="_blank">
+									<img class="imgLink justify-content-center" src="./src/sharepoint.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Sharepoint</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://dropzone.ssl.telespazio.com" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/dropzone.png" alt="DropZone" longdesc="./dropzone.txt" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>DropZone</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://tpm.ssl.telespazio.com" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/tpm.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Password Manager</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://ssl.telespazio.com" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/portal.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Portal</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://mailrelay1.ssl.telespazio.com/pem/login/pages/login.jsf" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/PEM.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Personal Email Manager</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://hr-services.fr.adp.com/" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/zadig.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Zadig</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://intranet.telespazio.com/EN/Pages/default.aspx" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/intranet.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Intranet</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://teamsites.telespazio.com/sites/francequality/" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/SiteQualite.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Site Qualité</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://secure.digiposte.fr/identification-plus" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/digiposte.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Digiposte</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://startpage.telespazio.fr/COM/covidpage.html" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/vignetteCOVID19ok.jpg" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>COVID-19</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://performancemanager5.successfactors.eu/login?company=finmeccaniP" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/hrevolution.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>HRevolution</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
 				</div>
 			</div>
+		</div>
+<!--Second tab-->
+		<div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
 			<div class="spacer"></div>
-			<div class="row">
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://ssl.telespazio.com" target="_blank">
-								<img  title="" src="./src/portal.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Portal</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://mailrelay1.ssl.telespazio.com/pem/login/pages/login.jsf" target="_blank">
-								<img  title="" src="./src/PEM.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Personal Email Manager</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://hr-services.fr.adp.com/" target="_blank">
-								<img  title="" src="./src/zadig.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Zadig</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://intranet.telespazio.com/EN/Pages/default.aspx" target="_blank">
-								<img  title="" src="./src/intranet.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Intranet</p>
-						</li>
-					</ul>
+			<div class="container">
+				<div class="row">
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://jira.ssl.telespazio.com/secure/Dashboard.jspa" target="_blank">
+									<img class="imgLink justify-content-center" src="./src/jira.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Jira</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://tuleap.telespazio.fr" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/tuleap.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Tuleap</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="http://demonstrator.telespazio.com/" target="_blank">
+									<img class="imgLink justify-content-center"  title="" src="./src/demonstrator.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Demonstrator</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+	<!--link separator-->
+					<div class="col-md-3 col-sm-6">
+						<div class="cardBlockShadow border rounded bg-white">
+							<div class="text-center">
+								<a class="navBlock justify-content-center" title="" href="https://login.salesforce.com/" target="_blank">
+									<img class="imgLink justify-content-center" title="" src="./src/salesforce.png" alt="" />
+								</a>
+							</div>
+							<div>
+								<p class="text-center"><strong>Salesforce</strong></p>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
 				</div>
 			</div>
+		</div>
+	<!--NewTabPlacement-->
+	
+	<!--NewTabPlacement-->
+<!--faq tab-->
+		<div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab">
 			<div class="spacer"></div>
-			<div class="row">
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://teamsites.telespazio.com/sites/francequality/" target="_blank">
-								<img  title="" src="./src/SiteQualite.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Site Qualité</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://secure.digiposte.fr/identification-plus" target="_blank">
-								<img  title="" src="./src/digiposte.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Digiposte</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://startpage.telespazio.fr/COM/covidpage.html" target="_blank">
-								<img  title="" src="./src/vignetteCOVID19ok.jpg" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">COVID-19</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://performancemanager5.successfactors.eu/login?company=finmeccaniP" target="_blank">
-								<img  title="" src="./src/hrevolution.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">HRevolution</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="spacer"></div>
-			<div class="row">
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://jira.ssl.telespazio.com/secure/Dashboard.jspa" target="_blank">
-								<img src="./src/jira.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Jira</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://tuleap.telespazio.fr" target="_blank">
-								<img  title="" src="./src/tuleap.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Tuleap</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="http://demonstrator.telespazio.com/" target="_blank">
-								<img  title="" src="./src/demonstrator.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Demonstrator</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>
-							<a class="navBlock" title="" href="https://login.salesforce.com/" target="_blank">
-								<img title="" src="./src/salesforce.png" alt="" />
-							</a>
-						</li>
-						<li>
-							<p class="text-justify">Salesforce</p>
-						</li>
-					</ul>
+			<div class="container">
+				<p id="qtext">
+					<B>Bienvenue sur StartPage</B><br>
+					<br>
+					C'est un simple regroupement des liens utiles de Telespazio en un seul endroit.<br>
+					Si vous voulez bien mettre ceci pour votre page de d’accueil (ou bien l'une d'entre elle).<br>
+					<br>
+					Q. Pourquoi ne pas utiliser des signets sur serveur ?<br>
+					R. Tous les logiciels que j'ai vus fonctionnent de façon individuel et non pour une entreprise. (Et le serveur n'est pas hébergé à la société)<br>
+					<br>
+					Q. Pourquoi ne pas mettre les liens sur l'intranet ou créer un site sharepoint?<br>
+					R. Vous avez besoin de rentrer un identifiant et un mot de passe pour accéder à ces sites si vous n'êtes pas sur le réseau de la société. <br>
+					<br>
+					Q. À propos du message du jour? Ou un article des nouvelles de la société?<br>
+					R. Non… de la clarté, clarté, clarté. Il existe déjà une tonne de sites qui vous donnent toutes ces informations (intranet, page d'accueil de la société…)<br>
+					<br>
+					Q. J'ai un site internet, puis je l'ajouter?<br>
+					R. Est-ce un site indépendant de la BU? Le site est-il autant utilisé? Si oui, si il vous plait créer un ticket et il sera examiné.<br>
+					<br>
+					Q. Je là déteste, puis-je utiliser une page différente?<br>
+					R. Oui<br>
+					<br>
+					Cordialement<br>
+					<br>
+					ICT France<br>
+					</p>
 				</div>
 			</div>
 		</div>
