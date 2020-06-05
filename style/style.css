@@ -1,5 +1,5 @@
 body {
-	background-color: rgba(240, 240, 240, 1) ;
+	background-color: white ;
 }
 
 img {
@@ -36,5 +36,21 @@ ul,ol{
 }
 
 .cardBlockShadow:hover {
-	box-shadow: 0 0 5px red;
+	box-shadow: 0 0 5px rgb(165, 11, 11);
+}
+
+/* nav custom colors */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #525657;
+	color: whitesmoke;
+	font-weight: bold;
+}
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link {
+	color:  #525657;
+	font-weight: bold;
+}
+
+.nav-pills > a.active, .nav-pills > a.active:hover {
+    background-color: rgb(187, 10, 10);
 }
